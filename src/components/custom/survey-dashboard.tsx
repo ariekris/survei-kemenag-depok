@@ -272,15 +272,43 @@ export function SurveyDashboard() {
             </div>
 
             {/* Overlapping Circular Button */}
-            <div className="absolute right-[-14px] top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-[0_8px_24px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform duration-200 z-20 pointer-events-none">
-              <Image
-                src="/images/arrow-right.svg"
-                alt="Panah Kanan"
-                width={20}
-                height={20}
-                className="object-contain text-neutral-800"
-              />
-            </div>
+            <motion.div
+              animate={{
+                scale: [1, 1.03, 1, 1],
+              }}
+              transition={{
+                duration: 3,
+                ease: "easeInOut",
+                times: [0, 0.1167, 0.2333, 1],
+                repeat: Infinity,
+                repeatDelay: 0,
+                delay: 2.5,
+              }}
+              className="absolute right-[-14px] top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-[0_8px_24px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform duration-200 z-20 pointer-events-none"
+            >
+              <motion.div
+                animate={{
+                  x: [0, 4, 0, 0],
+                }}
+                transition={{
+                  duration: 3,
+                  ease: "easeInOut",
+                  times: [0, 0.1167, 0.2333, 1],
+                  repeat: Infinity,
+                  repeatDelay: 0,
+                  delay: 2.5,
+                }}
+                className="flex items-center justify-center pointer-events-none"
+              >
+                <Image
+                  src="/images/arrow-right.svg"
+                  alt="Panah Kanan"
+                  width={20}
+                  height={20}
+                  className="object-contain text-neutral-800"
+                />
+              </motion.div>
+            </motion.div>
           </button>
 
           {/* Card 2: Kualitas Pelayanan */}
@@ -314,15 +342,43 @@ export function SurveyDashboard() {
             </div>
 
             {/* Overlapping Circular Button */}
-            <div className="absolute right-[-14px] top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-[0_8px_24px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform duration-200 z-20 pointer-events-none">
-              <Image
-                src="/images/arrow-right.svg"
-                alt="Panah Kanan"
-                width={20}
-                height={20}
-                className="object-contain text-neutral-800"
-              />
-            </div>
+            <motion.div
+              animate={{
+                scale: [1, 1.03, 1, 1],
+              }}
+              transition={{
+                duration: 3,
+                ease: "easeInOut",
+                times: [0, 0.1167, 0.2333, 1],
+                repeat: Infinity,
+                repeatDelay: 0,
+                delay: 2.5,
+              }}
+              className="absolute right-[-14px] top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-[0_8px_24px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform duration-200 z-20 pointer-events-none"
+            >
+              <motion.div
+                animate={{
+                  x: [0, 4, 0, 0],
+                }}
+                transition={{
+                  duration: 3,
+                  ease: "easeInOut",
+                  times: [0, 0.1167, 0.2333, 1],
+                  repeat: Infinity,
+                  repeatDelay: 0,
+                  delay: 2.5,
+                }}
+                className="flex items-center justify-center pointer-events-none"
+              >
+                <Image
+                  src="/images/arrow-right.svg"
+                  alt="Panah Kanan"
+                  width={20}
+                  height={20}
+                  className="object-contain text-neutral-800"
+                />
+              </motion.div>
+            </motion.div>
           </button>
         </div>
       </motion.div>
